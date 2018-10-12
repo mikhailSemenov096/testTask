@@ -1,0 +1,38 @@
+.content {
+ padding: 15px;
+ &::before, &::after {
+  content: '';
+  clear: both;
+  display: block;
+ }
+}
+
+.content__column {
+ padding: 15px;
+ float: left;
+ font-size: 0px;
+}
+.content__column_left {
+ width: 25%;
+}
+.content__column_right {
+ width: 20%;
+}
+.content__column_center {
+ width: 55%;
+}
+
+
+.content__img-small, .content__img-big {
+ padding: 10px;
+}
+.content__img-small {
+ width: 25%;
+ display: inline-block;
+ vertical-align: top;
+ img {
+  display: inline-block;
+  vertical-align: top;
+ }
+}
+
