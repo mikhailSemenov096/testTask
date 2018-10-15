@@ -71,22 +71,6 @@ $(document).ready(function() {
  }
  checkAll();
 
-//Динамический отступ для .form-content
- function formContentPadding() {
-  var formButtons = $('.form__buttons'),
-      formButtonsHeight = $('.form__buttons').outerHeight(),
-      formContent = $('.form__content');
-
-
-  formContent.css({paddingBottom: formButtonsHeight});
- }
- formContentPadding();
-
- $(window).on('resize', function() {
-  formContentPadding();
- });
-
-
 //Отправка формы
 $('.form').submit(function() {
 
