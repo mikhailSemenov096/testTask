@@ -2,11 +2,8 @@ $(document).ready(function() {
  
  function formOpen() {
   $('.popup').addClass('active');
-
-  if($(window).width() >= 1200){
-   $('.overlay').fadeIn();
-   $('.content').addClass('blur');
-  }
+  $('.overlay').fadeIn();
+  $('.content').addClass('blur');
  }
 
  function formClose() {
