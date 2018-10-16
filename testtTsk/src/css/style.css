@@ -505,7 +505,7 @@ textarea {
   }
 }
 
-@media (max-width: 479px) {
+@media (min-width: 320px) and (max-width: 479px) {
   .gallery__title {
     font-size: 26px;
   }
