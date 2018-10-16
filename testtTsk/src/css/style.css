@@ -242,16 +242,6 @@ textarea {
 }
 
 @media (max-width: 768px) {
-  .empty {
-    display: none;
-    postion: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 45px;
-  }
 
   body {
     color: #000;
