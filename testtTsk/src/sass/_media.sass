@@ -1,0 +1,204 @@
+@media (min-width: 768px)
+ *
+  display: none 
+
+@media (max-width: 768px)
+ 
+ .empty
+ 	display: none
+ 	postion: absolute
+ 	top: 50%
+ 	left: 50%
+ 	transform: translate(-50%, -50%)
+ 	font-size: 45px
+
+ body
+	 color: $color-dark
+	 font-weight: 400
+
+ img
+ 	width: 100%
+
+ .container
+ 	max-width: 720px
+	 padding: 0 10px
+	 margin: 0 auto
+
+ .shell
+ 	margin: 0 -10px
+
+ .gallery__title
+	 font-family: $playFair 
+	 font-size: 40px
+	 text-transform: uppercase
+	 color: $color-dark-light
+
+ .date
+ 	font-family: $notoSerif 
+	 text-align: center
+	 padding: 25px 0
+	 &__wrap
+	 	width: 100%
+	 &__num
+	 	font-size: 36px
+	 	display: inline-block
+	 	position: relative
+		 &::before
+			 content: '\25b8'
+		 	font-size: 18px
+		 	position: absolute
+		 	top: 50%
+			 right: -20px
+			 transform: translateY(-50%)
+ 	&__mounth
+	 	font-size: 18px
+	 	line-height: 24px
+		 display: block
+
+ .col
+  padding: 0 10px
+
+ .gallery
+ 	padding: 40px 0 33px
+ 	&__title
+ 		position: relative
+ 		display: flex
+ 		font-family: $playFair 
+	  font-size: 40px
+	  text-transform: uppercase
+	  color: $color-dark-light
+ 		span
+ 			margin: 0 5px -5px 0
+ 		&::after
+ 			content: ''
+ 			display: block
+ 			border-bottom: 2px solid $color-dark-light
+ 			flex-grow: 1
+ 	&__main
+ 		position: relative
+ 		margin-top: 25px
+ 		&-date
+   	max-width: 160px
+   	width: 100%
+   	background-color: rgba($color-white, .8)
+   	position: absolute
+   	top: 20px
+   	left: 20px
+   &-descr
+  	 font-size: 13px
+    font-weight: 700
+    margin-top: 10px
+    span
+   	 display: block
+   	 color: $color-grey
+   	 font-weight: 400
+    	margin-top: 5px
+
+	 &__wrap
+	 	margin-top: 18px
+	 	display: grid
+		 grid-template-columns: repeat(4, 25%)
+	 &__item
+	 	padding: 10px
+	 	&_teaser
+	 		display: none
+	 	&.date
+	 		padding: 0
+	 		display: flex
+	 		align-items: center
+		 &_big
+		  grid-row-start: 1
+		  grid-row-end: 3
+    grid-column-start: 4
+    &-second 
+   	 grid-row-start: 5
+		   grid-row-end: 7
+		   grid-column-start: 4
+ .ref
+ 	font-size: 13px
+ 	font-family: $notoSans
+ 	margin-top: 30px
+ 	&__title
+ 		color: #848484
+ 		display: inline-block
+ 		vertical-align: middle
+ 		margin-right: 24px
+ 	&__link
+ 		display: inline-block
+ 		vertical-align: middle
+ 		color: $color-dark
+   margin-left: 20px
+ 		&_num
+ 		 width: 34px
+ 		 height: 34px
+ 		 border-radius: 50%
+ 		 position: relative
+ 		 margin-left: 5px
+ 		 span
+ 		 	position: absolute
+ 		 	top: 50%
+ 		 	left: 50%
+ 		 	transform: translate(-50%, -50%)
+ 		 &.active
+ 		 	background-color: #e6e6e6
+ 		 	font-weight: 700
+
+@media (max-width: 576px)
+ .container
+ 	max-width: 460px
+ 
+ .col
+ 	padding: 0 5px
+
+ .date 
+ 	&__num
+   font-size: 18px
+  &__mounth
+  	font-size: 14px
+
+ .gallery
+ 	&__main
+ 		&-date
+ 			max-width: 80px
+ 			padding: 10px 0
+ 		&-descr
+ 			display: none
+
+ 	&__wrap
+ 		grid-template-columns: repeat(5, 20%)
+ 		margin-top: 0
+ 	&__item
+ 		padding: 5px
+ 		&_big
+ 			grid-row-start: 1
+		  grid-row-end: 5
+    grid-column-start: 4
+    grid-column-end: 6
+    &-second
+    	display: none
+
+@media (max-width: 479px)
+ .gallery
+ 	&__title
+   font-size: 26px
+  &__wrap
+  	grid-template-columns: repeat(4, 25%)
+  &__item
+  	&_teaser
+  		display: block
+  		grid-row-start: 3
+    grid-column-start: 1
+    grid-column-end: 5
+  	&_big
+  		display: none
+
+ .ref
+ 	&__title
+ 		display: none 
+ 	&__link
+ 		margin-left: 10px
+ 		&_num
+ 			margin: 0 5px 0 0
+
+  	
+
